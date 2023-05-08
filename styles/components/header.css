@@ -1,0 +1,147 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.header__icon {
+  fill: #f0003c;
+  transition: fill 0.3s;
+  height: 3rem;
+  width: 3rem;
+}
+.header__icon:hover {
+  fill: aliceblue;
+}
+
+/* .header__menu {
+
+display: none;
+
+} */
+.header__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+  /* border: solid rgb(73, 178, 108) 1px; */
+  gap: 2rem;
+}
+
+.header__link {
+  font-size: var(--size-4xl);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+/* .header__bars{
+    
+    color: aliceblue;
+    width: var(--size-2xl);
+    height: var(--size-2xl);
+    display: block;
+} */
+
+/* for xs media screen */
+
+/* @media (min-width: 475px)  {
+    .container {
+        max-width: 475px;
+    }
+    } */
+
+/* for small media screen */
+
+/* @media (min-width: 640px)  {
+        .container {
+        max-width: 640px;
+    }
+    } */
+
+/* for medium media screen */
+
+@media (min-width: 768px) {
+  .header__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    /* border: solid red 1px; */
+    gap: 1rem;
+  }
+  .header__link {
+    font-size: var(--size-4xl);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  .header__link:hover {
+    color: var(--clr-light);
+  }
+
+  .header__resume {
+    display: block;
+    font-size: var(--size-xs);
+  }
+
+  .header__bars {
+    display: none;
+  }
+}
+
+/* for large media screen */
+
+@media (min-width: 1024px) {
+  .header__link {
+    font-size: var(--size-4xl);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  .header__link:hover {
+    color: var(--clr-light);
+  }
+
+  .header__resume {
+    display: block;
+    font-size: var(--size-xs);
+  }
+
+  .header__icon {
+    color: red;
+    /* fill: red; */
+    fill: hsl(345deg 100% 47%);
+    transition: fill 0.3s;
+    width: 3rem;
+    height: 3rem;
+  }
+  .header__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    /* border: solid red 1px; */
+    gap: 7rem;
+  }
+}
+
+/* for xtra large media screen */
+
+/* @media (min-width: 1280px)  {
+        
+    } */
+
+/* for 2 xtra large media screen */
+
+/* @media (min-width: 1536px)  {
+        
+    } */

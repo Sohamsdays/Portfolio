@@ -1,0 +1,129 @@
+.hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  text-shadow: 0 10px 50px #FFD700 ;
+  letter-spacing: 0.1rem;
+}
+
+.hero__image {
+  display: inline;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  box-shadow: 0 0px 100px #d75454 ;
+}
+
+.hero__subtitle {
+  color: wheat;
+  font-size: var(--size-base);
+}
+
+.hero__title {
+  color: wheat;
+  font-size: var(--size-4xl);
+  line-height: 0.9;
+}
+.hero__description {
+    text-shadow: 0 10px 20px rgba(225, 29, 72, 0.5);
+  color: wheat;
+  font-size: var(--size-sm);
+}
+/* @keyframes border-color-change {
+    0% {
+      border-color: #fa0000;
+    }
+    50% {
+      border-color: #f04a4a;
+    }
+    100% {
+      border-color: #0000ff;
+    }
+  } */
+
+.hero__btn {
+    /* border: 5px solid #000000; */
+    
+  text-transform: capitalize;
+  font-size: var(--size-xl);
+  animation-name: border-color-change;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+
+
+/* for xs media screen */
+
+/* @media (min-width: 475px)  {
+    .container {
+        max-width: 475px;
+    }
+    } */
+
+/* for small media screen */
+
+/* @media (min-width: 640px)  {
+        .container {
+        max-width: 640px;
+    }
+    } */
+
+/* for medium media screen */
+
+/* @media (min-width: 768px)  {
+        
+    } */
+
+/* for large media screen */
+
+/* @media (min-width: 1024px)  {
+        
+    } */
+
+/* for xtra large media screen */
+
+@media (min-width: 1280px) {
+  .hero {
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .hero__image {
+    display: inline;
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .hero__subtitle {
+    color: wheat;
+    font-size: var(--size-4xl);
+  }
+
+  .hero__title {
+    color: wheat;
+    font-size: var(--size-6xl);
+    line-height: 0.9;
+  }
+  .hero__description {
+    color: wheat;
+    font-size: var(--size-3xl);
+    width: 80%;
+  }
+
+  .hero__btn {
+    text-transform: capitalize;
+    font-size: var(--size-3xl);
+  }
+}
+
+/* for 2 xtra large media screen */
+
+/* @media (min-width: 1536px)  {
+        
+    } */
